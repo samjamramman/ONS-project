@@ -2,6 +2,8 @@
 
 Install dependencies:
 ```
+python -m venv .venv
+pyenv shell
 pip install -m requirements.txt
 ```
 
