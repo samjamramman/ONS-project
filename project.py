@@ -1,4 +1,4 @@
-#samjamrammanl
+#samjamramman
 #Project for andrew
 import requests
 import json
