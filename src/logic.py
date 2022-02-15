@@ -7,19 +7,19 @@ def get_pay_datasets():
     datasets = requests.get("https://api.beta.ons.gov.uk/v1/datasets?limit=45")
     data = json.loads(datasets.text)
     
-    usefulDatasets=[]
+    payDatasets=[]
     
     for dataset in data["items"]: #cycles through each dataset
       try:  #if a keyword section is present
         keywords = dataset["keywords"]
         if "ASHE" in keywords:  #if the keyword "ASHE" is present
-          usefulDatasets.append(dataset)
+          payDatasets.append(dataset)
     
       except: #if there is no keyword section
         description = dataset["description"].lower().split(" ") #splits the discription string into a list of strings
         if ("incomes" or "income") in description:  #if the words "incomes" or "income" are in description
-          usefulDatasets.append(dataset)
-    return usefulDatasets
+          payDatasets.append(dataset)
+    return payDatasets
 
 def get_latest_url_by_id(id):
   # This method must 1. call get_useful_datasets()
