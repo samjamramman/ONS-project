@@ -22,5 +22,11 @@ def get_useful_datasets():
     return usefulDatasets
 
 def get_latest_taxes_and_benefits_url():
-  # This method must 1. call get_useful_datasets() 2. search for the data set where 'id' is 'tax-benefits-statistics' 3. return the value in .links.lastest.href
-  return "" # to be completed...
+  # This method must 1. call get_useful_datasets()
+  datasets = get_useful_datasets()
+  #  2. search for the data set where 'id' is 'tax-benefits-statistics' 
+  for dataset in datasets:
+    if dataset["id"] == "tax-benefits-statistics":
+      correctDataset = dataset
+  # 3. return the value in .links.lastest.href
+  return correctDataset["links"]["latest_version"]["href"]
