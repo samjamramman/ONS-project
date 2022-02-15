@@ -1,2 +1,4 @@
 *.json
 gitpod.yml
+__pycache__
+.venv
