@@ -4,19 +4,19 @@ Install dependencies:
 ```
 python -m venv .venv
 pyenv shell
-pip install -m requirements.txt
+pip install -r requirements.txt
 ```
 
 # Running the code
 
 To run the project, run 
 ```
-python project.py
+python3 project.py
 ```
 
 To run the tests, run
 ```
-pytest
+python3 -m pytest -s
 ```
 
 # ONS data project
