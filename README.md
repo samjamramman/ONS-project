@@ -1,3 +1,5 @@
+[![Run tests](https://github.com/goofballLogic/ONS-project/actions/workflows/python-package.yml/badge.svg)](https://github.com/goofballLogic/ONS-project/actions/workflows/python-package.yml)
+
 # Installation
 
 Install dependencies:
