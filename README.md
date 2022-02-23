@@ -1,4 +1,4 @@
-[![Run tests](https://github.com/goofballLogic/ONS-project/actions/workflows/python-package.yml/badge.svg)](https://github.com/goofballLogic/ONS-project/actions/workflows/python-package.yml)
+[![Run tests](https://github.com/samjamramman/ONS-project/actions/workflows/python-package.yml/badge.svg)](https://github.com/samjamramman/ONS-project/actions/workflows/python-package.yml)
 
 # Installation
 
