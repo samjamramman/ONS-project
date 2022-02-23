@@ -14,7 +14,7 @@ def get_pay_datasets():
     
     payDatasets=[]
     
-    for dataset in data["items"]: #cycles through each dataset
+    for dataset in datasets["items"]: #cycles through each dataset
       try:  #if a keyword section is present
         keywords = dataset["keywords"]
         if "ASHE" in keywords:  #if the keyword "ASHE" is present
